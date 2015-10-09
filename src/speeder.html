@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Hyperspeeder</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" href="style.css" type="text/css" media="Screen" charset="utf-8">
+  <style>
+    div { margin: 0; padding: 0; }
+    #hud {
+        position: absolute;
+        top: 0;
+        left: -2;
+        width: 600px;
+        height: 600px;
+        z-index: 3;
+        font-family: Impact, sans-serif;
+        font-size: 200%;
+        color: #14d9e5;
+    } 
+    .visible {
+        display: block;
+    }
+    .hidden {
+        display: none;
+    }
+    .centred {
+      text-align: center;
+    }
+    #title {
+      text-shadow: 1px 1px 2px black;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div id="container" height="600px" width="600px">
+      <canvas id="canvas"></canvas>
+      <div id="hud">
+        <p id="title" class="hidden">Level 1</p>
+        <img class="visible" id="logo"     src="graphics/logo.png">
+        <img class="hidden"  id="level"    src="graphics/level_complete.png">
+        <img class="hidden"  id="gameover" src="graphics/gameover.png">
+        <img class="hidden"  id="finish"   src="graphics/finishline.png">
+      </div>
+    </div>
+    <div class="cite"><p>Programmed using <a href="threejs.org">the three.js library</a></p></div>
+    <div class="cite" xmlns:cc="http://creativecommons.org/ns#" about="http://www.dreade.org/nosoap/"><p>Music by <a rel="cc:attributionURL" property="cc:attributionName" href="http://www.nosoapradio.us">DeceasedSuperiorTechnician</a> / <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></p></div>      
+    <div><p class="button"><a href="http://games.cyberealms.net/">Return to Games@The-Study</a></p></div>
+    <center><p class="centered"><img src="graphics/onegame_logo.png"></p></center>
+  </div>
+  <script src="js/three/Three.js"></script>
+  <script src="js/three/Detector.js"></script>
+  <script src="js/three/Tween.js"></script>
+  
+  <script src="js/three/THREEx.KeyboardState.js"></script>
+  <script src="js/three/THREEx.FullScreen.js"></script>
+  <script src="js/three/THREEx.WindowResize.js"></script>
+  <script src="js/levels.js"></script>
+  <script src="js/game.js"></script>
+  
+</body>
+</html>

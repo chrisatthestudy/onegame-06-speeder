@@ -1,0 +1,368 @@
+/* 
+ * =============================================================================
+ * Reset 
+ * =============================================================================
+ * Resets default browser CSS (copied from YUI reset.css)
+ * ----------------------------------------------------------------------------- 
+ */
+
+/**
+ * YUI 3.5.0 - reset.css (http://developer.yahoo.com/yui/3/cssreset/)
+ * http://cssreset.com
+ * Copyright 2012 Yahoo! Inc. All rights reserved.
+ * http://yuilibrary.com/license/
+ */
+/* YUI 3.5.0 reset.css (http://developer.yahoo.com/yui/3/cssreset/) - http://cssreset.com */
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000}
+
+/* 
+ * =============================================================================
+ * Debugging 
+ * =============================================================================
+ */
+
+/* div { border: black 1px solid; } */
+ 
+/*
+.header { background-color: #ffcccc; }
+.nav { background-color: #ccffcc; }
+.section { background-color: #ccccff; }
+.article { background-color: #ffffcc; }
+.aside { background-color: #ffccff; }
+.footer { background-color: #ccffff; }
+
+.size1of1{background-color:pink;}
+.size1of2{background-color:red;}
+.size1of3{background-color:orange;}
+.size2of3{background-color: yellow;}
+.size1of4{background-color:lime;}
+.size2of4{background-color:tan;}
+.size3of4{background-color:green;}
+.size1of5{background-color:aqua;}
+.size2of5{background-color:blue;}
+.size3of5{background-color:purple;}
+.size4of5{background-color:magenta;}
+*/
+
+/*
+ * =============================================================================
+ * Layout 
+ * =============================================================================
+ * And layout only. Colours and Typography are in the next section.
+ */
+
+body { 
+	position: relative;
+	padding: 0 0 0 0;
+	margin: 0.2em auto; /* Required by IE7? */ 
+  text-align: center;
+  overflow: hidden;
+}
+
+.page { 
+  text-align: left;
+	width: 620px;
+	margin: 0.2em auto; 
+}
+
+div {
+  padding: 2px;
+}
+
+article, aside, footer, header, section {
+  display: block;
+}
+
+/*
+ * -----------------------------------------------------------------------------
+ * HTML5 Structure
+ * -----------------------------------------------------------------------------
+ * For browsers which do not recognise/support the new HTML5 elements, create
+ * classes which match with them, and use divs with these classes. 
+ */
+.header {
+}
+
+.nav {
+}
+.nav li {
+  display: block;
+}
+.nav li a {
+  display: block;
+  width: 100%;
+}
+.nav li a:hover {
+  display: block;
+}
+
+.section {
+}
+
+.article {
+}
+
+.aside {
+}
+
+.footer {
+}
+
+/*
+ * -----------------------------------------------------------------------------
+ * Additional Structures
+ * -----------------------------------------------------------------------------
+ * These are for additional structural elements in the document.
+ */
+.page-header {
+}
+
+.main-container {
+}
+
+.main-content {
+}
+
+.main-content-header {
+}
+
+.article-header {
+}
+
+.article-footer {
+}
+
+.main-content-footer {
+}
+
+.page-footer {
+}
+
+/* 
+ * -----------------------------------------------------------------------------
+ * Grid 
+ * -----------------------------------------------------------------------------
+ * Use a div with a "row" class to group together divs with a "span*" class, to
+ * layout elements as a page grid.
+ */
+.row:after{content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+.lastCol:after{content: " . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ";visibility:hidden; clear:both;height:0 !important;display:block;line-height:0;}
+.row{*zoom:1;}
+.col{float:left;}
+.size1of1{float:none;}
+.size1of2{width:50%;}
+.size1of3{width:33.33333%;}
+.size2of3{width:66.66666%;}
+.size1of4{width:25%;}
+.size2of4{width:50%;}
+.size3of4{width:75%;}
+.size1of5{width:20%;}
+.size2of5{width:40%;}
+.size3of5{width:60%;}
+.size4of5{width:80%;}
+.lastCol {display: table-cell; *display:block;*zoom:1;float:none;_position:relative; _left:-3px; _margin-right: -3px;width:auto;}
+
+.clear {
+  clear: both;
+}
+
+/* 
+ * =============================================================================
+ * Typography and Colours
+ * =============================================================================
+ */
+html {
+  background-color: #000;
+  color: #00ddff;
+}
+
+body {
+  font-size: 16px;
+  line-height: 26px;   
+  font-family: Helvetica, Arial, sans-serif; 
+}
+
+/*
+ * HTML5 Elements
+ */
+.header {
+}
+
+.nav {
+}
+.nav li {
+}
+.nav li a {
+  background-color: #cccccc;
+}
+.nav li a:hover {
+  background-color: #eeeeee;
+}
+
+.section {
+}
+
+.article {
+}
+
+.aside {
+}
+
+.footer {
+  text-align: center;
+  border-top: #444444 1px solid;
+  font-size: 0.75em;
+  color: #cccccc;
+}
+
+/*
+ * Additional Elements
+ */
+.page-header {
+}
+
+.main-container {
+}
+
+.main-content {
+}
+
+.main-content-header {
+}
+
+.article-header {
+}
+
+.article-footer {
+}
+
+.main-content-footer {
+}
+
+.page-footer {
+}
+
+/*
+ * Standard HTML Tags
+ */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  font-family: Verdana, sans-serif;
+}
+
+/*
+ * Decorations
+ */
+.btn {
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*
+ * =============================================================================
+ * Game UI Components
+ * =============================================================================
+ */
+ 
+.page {
+}
+
+.page-header {
+  text-align: center;
+}
+
+#board {
+  width: 400px;
+  /* height: 400px; */
+/*  border: #000 1px inset; */
+  overflow: hidden;
+ 
+  /*
+  border: 1px solid #421;
+  -webkit-box-shadow: inset 0 0 5px 5px rgba(0, 0, 0, 0.5);
+     -moz-box-shadow: inset 0 0 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 0 5px 5px rgba(0, 0, 0, 0.5);
+  */
+}
+
+#jaws-log {
+  width: 400px;
+  height: 200px;
+  border: #000 1px inset;
+  overflow: auto;
+  font-size: smaller;
+  color: #aaaaaa;
+}
+
+.cite {
+  font-size: x-small;
+  text-align: right;
+  color: #99f;
+}
+
+.cite p {
+  line-height: 12px;
+}
+
+.cite a {
+  color: #f92;
+}  
+
+.fps {
+  color: white;
+}
+
+#logo {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+}
+
+.cite {
+  font-size: x-small;
+  text-align: right;
+  color: #99f;
+}
+
+.cite p {
+  line-height: 12px;
+}
+
+.cite a {
+  color: #f92;
+}  
+
+.button {
+  width: 100%;
+  text-align: center;
+  line-height: 32px;
+  border: 1px solid #eee;
+  -webkit-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+     -moz-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.button a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: #ddd;
+}
+
